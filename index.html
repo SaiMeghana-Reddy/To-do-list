@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intern Task – To-Do Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 ApexPlanet Internship Portal</h1>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <nav>
+      <ul>
+        <li><a href="#">🏠 Dashboard</a></li>
+        <li><a href="#">✅ Tasks</a></li>
+        <li><a href="#">📊 Progress</a></li>
+        <li><a href="#">📞 Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section class="grid-box">
+        <div class="box">📘 HTML</div>
+        <div class="box">🎨 CSS</div>
+        <div class="box">📜 JavaScript</div>
+        <div class="box">📱 Responsive Design</div>
+      </section>
+
+      <section class="todo-section">
+        <h2>📝 My To-Do List</h2>
+        <div class="todo-controls">
+          <input type="text" id="taskInput" placeholder="Enter a task" />
+          <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 ApexPlanet Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

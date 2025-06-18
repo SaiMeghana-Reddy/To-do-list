@@ -1,0 +1,143 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+}
+
+header, footer {
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+nav {
+  width: 20%;
+  background-color: #e0f7fa;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+}
+
+main {
+  width: 80%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Grid Content Boxes */
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.box {
+  background-color: #b2dfdb;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* To-Do Section */
+.todo-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+}
+
+.todo-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-controls input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.todo-controls button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-controls button:hover {
+  background-color: #004d40;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+#taskList li span {
+  color: red;
+  cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav, main {
+    width: 100%;
+  }
+
+  .grid-box {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .todo-controls {
+    flex-direction: column;
+  }
+
+  .todo-controls input[type="text"],
+  .todo-controls button {
+    width: 100%;
+  }
+}
